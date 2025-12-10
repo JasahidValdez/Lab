@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Coffee Order Form</title>
+</head>
+<body>
+
+  <!-- Header with links between pages -->
+  <header>
+    <h1>Welcome to Panchos Coffee</h1>
+    <nav>
+      <a href="index.html">Order Coffee</a> |
+      <a href="coffee.html">Coffee Info & Thank You</a>
+    </nav>
+  </header>
+
+  <!-- Instructions -->
+  <p>Please select an item from our inventory and complete the form below.</p>
+  <p>
+    <em>Please fill out each form field in full before submitting.</em>
+  </p>
+
+  <!-- Coffee Order Form -->
+  <!-- Note: action goes to the second file -->
+  <form action="coffee.html" method="get">
+
+    <!-- Name input -->
+    <label for="name">Your Name:</label>
+    <input type="text" id="name" name="customerName" required>
+    <br><br>
+
+    <!-- Coffee checkboxes -->
+    <fieldset>
+      <legend>Select your coffee flavor(s):</legend>
+
+      <label>
+        <input type="checkbox" name="coffee" value="House Blend">
+        House Blend - $3.00
+      </label><br>
+
+      <label>
+        <input type="checkbox" name="coffee" value="Vanilla Latte">
+        Vanilla Latte - $4.50
+      </label><br>
+
+      <label>
+        <input type="checkbox" name="coffee" value="Mocha">
+        Mocha - $4.75
+      </label><br>
+
+      <label>
+        <input type="checkbox" name="coffee" value="Caramel Macchiato">
+        Caramel Macchiato - $5.00
+      </label>
+    </fieldset>
+
+    <br>
+
+    <!-- Payment radio buttons -->
+    <fieldset>
+      <legend>Select payment type:</legend>
+
+      <label>
+        <input type="radio" name="payment" value="Visa" required>
+        Visa
+      </label><br>
+
+      <label>
+        <input type="radio" name="payment" value="Discover">
+        Discover
+      </label><br>
+
+      <label>
+        <input type="radio" name="payment" value="MasterCard">
+        Master Card
+      </label>
+    </fieldset>
+
+    <br>
+
+    <!-- Buttons -->
+    <button type="reset">Reset Form</button>
+    <button type="submit">Submit Order</button>
+
+  </form>
+
+</body>
+</html>
